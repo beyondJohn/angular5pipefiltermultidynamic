@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FiltermultiPipe } from './pipes/filtermulti.pipe';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  items = [{ title: "mr", first: "john", last: "jones" }
+   ,{ title: "mr", first: "adrian", last: "jacobs" }
+   ,{ title: "mr", first: "lou", last: "jones" }
+   ,{ title: "ms", first: "linda", last: "hamilton" }
+  ];
 }
